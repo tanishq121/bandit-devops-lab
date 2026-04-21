@@ -1,0 +1,71 @@
+
+---
+
+# 📄 3. `level-21-33/level-21-33.md` 🔥 (MOST IMPORTANT)
+
+```markdown
+# 🔐 Levels 21 → 33 (Automation, Git & Privilege Escalation)
+
+---
+
+## 📌 Overview
+This section focuses on advanced topics such as cron jobs, automation, brute-force scripting, Git workflows, and privilege escalation.
+
+---
+
+## 🧠 Concepts Covered
+- Cron jobs & scheduled tasks
+- Bash scripting & automation
+- Brute force techniques
+- Privilege escalation (setuid)
+- Git (clone, branches, tags, push)
+- Shell escaping
+
+---
+
+## ⚙️ Key Challenges & Solutions
+
+### 🔹 Cron Job Analysis
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/script.sh
+
+🔹 Brute Force Attack
+for i in $(seq -w 0 9999); do
+  echo "PASSWORD $i"
+done | nc localhost 30002
+🔹 SetUID Privilege Escalation
+./binary cat /etc/bandit_pass/bandit_user
+🔹 Git Clone
+git clone ssh://user@host/repo
+🔹 Git History
+git log
+git show HEAD~1
+🔹 Git Branches
+git branch -a
+git checkout dev
+🔹 Git Tags
+git tag
+git show tagname
+🔹 Git Push (Force Add)
+git add -f file
+git commit -m "message"
+git push origin master
+🔹 Shell Escape
+$0
+
+💡 Learning Outcome
+Learned how automation simplifies repetitive tasks
+Understood how misconfigured cron jobs expose sensitive data
+Gained deep understanding of Git workflows
+Practiced privilege escalation techniques
+Learned how to bypass restricted shells
+
+🚀 Real-World Relevance
+CI/CD pipelines
+Infrastructure automation
+Security auditing
+Git-based deployments
+DevOps troubleshooting
+
+🧠 Key Takeaway
+Automation, Git, and system-level understanding are core pillars of DevOps.
