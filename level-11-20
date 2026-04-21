@@ -1,0 +1,50 @@
+
+---
+
+# 📄 2. `level-11-20/level-11-20.md`
+
+```markdown
+# 🔐 Levels 11 → 20 (Encoding, SSH & Networking)
+
+---
+
+## 📌 Overview
+This section focuses on encoding techniques, secure access using SSH keys, and interacting with network services.
+
+---
+
+## 🧠 Concepts Covered
+- Base64 decoding
+- ROT13 cipher
+- SSH key-based authentication
+- Network communication (`nc`)
+- SSL/TLS connections (`openssl`)
+
+---
+
+## ⚙️ Key Challenges & Solutions
+
+🔹 Base64 Decoding
+cat data.txt | base64 -d
+🔹 ROT13 Cipher
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+🔹 SSH Key Login
+ssh -i keyfile user@host -p 2220
+🔹 Netcat (Port Communication)
+nc localhost 30000
+🔹 SSL/TLS Connection
+openssl s_client -connect localhost:30001
+
+💡 Learning Outcome
+Understood data encoding techniques
+Learned secure authentication using SSH keys
+Gained hands-on experience with network communication
+
+🚀 Real-World Relevance
+API security
+Secure server access
+Debugging network services
+TLS/SSL troubleshooting
+
+🧠 Key Takeaway
+Understanding networking and secure communication is critical for DevOps engineers.
